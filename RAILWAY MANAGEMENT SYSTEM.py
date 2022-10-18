@@ -136,7 +136,7 @@ def booktkt():
     global r,booktkt_frame
     con=myc.connect(user="root",host="localhost",password="KR007@12345",database="irctc")
     cur=con.cursor()
-    cur.execute("create table if not exists train(PNR_No varchar(30),Train_name varchar(50),Source varchar(30),destination varchar(30),name_of_passenger varchar(30),gender char (1))")
+    cur.execute("create table if not exists train(PNR_No varchar(30),Train_name varchar(50),Source varchar(30),destination varchar(30),name_of_passenger varchar(30),gender char (1),fare varchar(30))")
     con.commit()
 
     global tkt_entry,Name_entry,Source_entry,destin_entry,namep_entry,gender_entry,tkt_PNR_Lab
