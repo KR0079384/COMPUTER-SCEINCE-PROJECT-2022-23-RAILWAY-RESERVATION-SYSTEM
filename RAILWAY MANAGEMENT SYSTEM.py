@@ -4,7 +4,6 @@ import mysql.connector as myc
 from tkinter import messagebox
 import random
 from tabulate import tabulate 
-import os
 
 #creating main window and title,gemoetr,bg of the window and also the icon for the window
 root =tk.Tk()
